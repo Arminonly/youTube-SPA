@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import {List, Card, Button } from 'antd'
+import { List, Card, Button } from 'antd'
 
 export default function YoutubeContent(props) {
   const [state, setState] = useState(true)
@@ -8,7 +8,9 @@ export default function YoutubeContent(props) {
 
   return (
     <div>
-      <Button type="danger" onClick={() => setState(!state)}>Change view</Button>
+      <Button type="danger" onClick={() => setState(!state)}>
+        Change view
+      </Button>
 
       {state && search ? (
         <List

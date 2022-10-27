@@ -37,16 +37,14 @@ export default function LoginPage() {
         >
           <Form.Item
             label="Login"
-            name="login"
-            rules={[{ required: true, message: 'Please input your login!' }]}
+            rules={[{ required: true, message: 'Please input your login!',min:2 }]}
           >
             <Input />
           </Form.Item>
 
           <Form.Item
             label="Password"
-            name="password"
-            rules={[{ required: true, message: 'Please input your password!' }]}
+            rules={[{ required: true, message: 'Please input your password!',min:2 }]}
           >
             <Input.Password />
           </Form.Item>

@@ -25,7 +25,6 @@ export default function SearchInput() {
   function formSubmit(e) {
     e.preventDefault()
     
-
     fetch(myURL)
       .then((response) => response.json())
       .then((json) => {
